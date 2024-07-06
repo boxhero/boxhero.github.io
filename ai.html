@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的网站标题</title>
+</head>
+<style>
+  /* 全局样式 */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 标题样式 */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  /* 导航样式 */
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* 主要内容样式 */
+  main {
+    padding: 20px;
+  }
+
+  /* 文章样式 */
+  article {
+    margin-bottom: 20px;
+  }
+
+  /* 侧边栏样式 */
+  aside {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+
+  /* 版权信息样式 */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  svg {
+    width: 20rem;
+    overflow: visible;
+  }
+
+  line {
+    fill: none;
+    stroke: #17f700;
+    stroke-width: 1;
+    stroke-dasharray: 10, 5;
+    stroke-dashoffset: 0;
+    animation: line 1s linear infinite;
+  }
+
+  @keyframes line {
+    0% {
+      stroke-dashoffset: 0;
+    }
+
+    100% {
+      stroke-dashoffset: -15;
+    }
+  }
+</style>
+
+<body>
+  <svg viewbox="0 0 50 50">
+    <line x1="0" y1="25" x2="50" y2="25"></line>
+  </svg>
+  <header>
+    <h1>网站标题</h1>
+    <nav>
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于娄先生</a></li>
+        <li><a href="#">服务项目</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>文章标题</h2>
+      <p>这里是文章正文。////////////////////////////////////////////////////</p>
+    </article>
+    <aside>
+      <h3>侧边栏标题</h3>
+      <h1 id="counter">100</h1>
+
+
+      <ul>
+        <li><a href="#">项目1</a></li>
+        <li><a href="#">项目2</a></li>
+        <li><a href="#">项目3</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <p>版权所有 &copy; 2022 你的公司名称</p>
+  </footer>
+  <div class="move-right" onclick="moveRight()">右移</div>
+  <script>
+    function moveRight() {
+      document.querySelector('.move-right').style.transform = 'translateX(200px)';
+    }
+  </script>
+  <script>
+    function updateCounter() {
+      const counterElement = document.getElementById('counter');
+      const currentValue = parseInt(counterElement.textContent);
+      const colors = ['red', 'orange', 'yellow', 'green', 'blue']
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      counterElement.style.color = randomColor;
+      const newValue = currentValue - 1;
+
+      if (newValue < 0) {
+        clearInterval(counterInterval);
+        counterElement.textContent = '00:00';
+      } else {
+        counterElement.textContent = newValue < 10 ? '0' + newValue : newValue;
+      }
+    }
+
+    const counterInterval = setInterval(updateCounter, 1000);
+  </script>
+</body>
+
+</html>
