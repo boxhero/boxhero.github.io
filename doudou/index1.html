@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="relative min-full">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="csrf-token" content="FY6ZEXKA354L7bwhY2AY23NOrI2N8uFw5urbUCSv">
+        <meta name="keywords" content="Lsky Pro,lsky,兰空图床">
+        <meta name="description" content="">
+
+        <title>PICHUB- 您的云上相册。</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="static/css/css2.css">
+        <link rel="stylesheet" href="static/css/fontawesome.css">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="static/css/common.css">
+        <link rel="stylesheet" href="static/css/app.css">
+    </head>
+    <body class="font-sans antialiased">
+        <div class="relative min-h-screen min-w-screen text-gray-900">
+            <div class="relative bg-black overflow-hidden h-screen w-screen">
+        <header x-data="{ open: false }">
+    <div class="relative z-[999] shadow-custom h-20 bg-black/50 text-white">
+        <div class="flex items-center justify-between h-full w-full px-6">
+            <div class="flex items-center w-full overflow-hidden md:pr-6">
+                                <a href="" id="header-title" class="truncate text-lg">PICHUB</a>
+            </div>
+            <div class="" x-data="{ open: false }" @click.outside="open = false" @close.stop="open = false" x-cloak="">
+    <div @click="open = ! open">
+        <a href="javascript:void(0)" class="p-4 pr-0 block md:hidden"><i class="fas fa-ellipsis-h"></i></a>
+    </div>
+
+    <div x-show="open" class="fixed inset-0 w-full h-full overflow-hidden z-[90]">
+
+        <div x-show="open" x-transition:enter="ease-in-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" @click="open = false" aria-hidden="true"></div>
+
+        <div class="pointer-events-none fixed inset-0 flex max-w-[90%] max-h-[90%] left-auto">
+            <div x-show="open" x-transition:enter="transform transition ease-in-out duration-300 sm:duration-700" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transform transition ease-in-out duration-300 sm:duration-700" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" class="pointer-events-auto relative w-60">
+                <div x-show="open" x-transition:enter="ease-in-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute flex top-2 -left-8">
+                    <button type="button" class="rounded-md text-gray-300 hover:text-white focus:outline-none" @click="open = false">
+                        <span class="sr-only">Close panel</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex flex-col overflow-y-scroll h-full bg-white text-gray-700 shadow-xl py-2 h-screen">
+                    <a href="https://pic.couqiao.net/upload" class="px-4 py-2"><i class="fas fa-upload text-sm mr-1"></i> 上传</a>
+                                                                <div class="px-4 py-2" x-data="{ open: false }" @click.outside="open = false" @close.stop="open = false" x-cloak="">
+    <div @click="open = ! open">
+        <a href="javascript:void(0)"><i class="fas fa-ellipsis-h text-sm mr-1"></i> 广场</a>
+    </div>
+
+    <div x-show="open" class="fixed inset-0 w-full h-full overflow-hidden z-[90]">
+
+        <div x-show="open" x-transition:enter="ease-in-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" @click="open = false" aria-hidden="true"></div>
+
+        <div class="pointer-events-none fixed inset-0 flex max-w-[90%] max-h-[90%] top-auto">
+            <div x-show="open" x-transition:enter="transform transition ease-in-out duration-300 sm:duration-700" x-transition:enter-start="translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transform transition ease-in-out duration-300 sm:duration-700" x-transition:leave-start="translate-y-0" x-transition:leave-end="translate-y-full" class="pointer-events-auto relative w-screen">
+                <div x-show="open" x-transition:enter="ease-in-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute flex -top-8 right-2">
+                    <button type="button" class="rounded-md text-gray-300 hover:text-white focus:outline-none" @click="open = false">
+                        <span class="sr-only">Close panel</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex flex-col overflow-y-scroll h-full bg-white text-gray-700 shadow-xl py-2 w-screen">
+                    <a href="https://pic.couqiao.net/images" class="px-4 py-2"><i class="fas fa-image text-sm mr-1"></i> 图片</a>
+                                                                <a href="https://pic.couqiao.net/albums" class="px-4 py-2"><i class="fas fa-images text-sm mr-1"></i> 相册</a>
+                                                                <a href="https://pic.couqiao.net/users" class="px-4 py-2"><i class="fas fa-users text-sm mr-1"></i> 用户</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                                                <a href="https://pic.couqiao.net/login" class="px-4 py-2"><i class="fas fa-sign-in-alt text-sm mr-1"></i> 登录</a>
+                                                                                    <a href="https://pic.couqiao.net/page/api-docs.html" target="_self" class="px-4 py-2"><i class="fas fa-file-code text-sm mr-1"></i> 接口文档</a>
+                                        <a href="https://pic.couqiao.net/page/contact.html" target="_self" class="px-4 py-2"><i class="fas fa-comment text-sm mr-1"></i> 联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="shrink-0 items-center justify-center space-x-6 hidden md:flex">
+                                <a href="https://pic.couqiao.net/upload"><i class="fas fa-upload text-sm mr-1"></i> 上传</a>
+                
+                                <div class="relative" x-data="{ open: false }" @click.outside="open = false" @close.stop="open = false" x-cloak="">
+    <div @click="open = ! open">
+        <a href="javascript:void(0)"><i class="fas fa-ellipsis-h text-sm mr-1"></i> 广场</a>
+    </div>
+
+    <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="transform opacity-0 translate-y-9" x-transition:enter-end="transform opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 translate-y-0" x-transition:leave-end="transform opacity-0 translate-y-9" class="absolute z-[9] origin-top-right right-0 mt-2 w-48 rounded-md shadow-[10px_0px_50px_-15px_rgba(0,0,0,0.25)] py-1 bg-white " role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" style="display: none">
+        <a class="block px-4 py-2 active:bg-gray-100 text-sm text-gray-700 truncate hover:bg-sky-500 hover:text-white" role="menuitem" tabindex="-1" href="https://pic.couqiao.net/images"><i class="fas fa-image text-sm mr-1"></i> 图片</a>
+                                                <a class="block px-4 py-2 active:bg-gray-100 text-sm text-gray-700 truncate hover:bg-sky-500 hover:text-white" role="menuitem" tabindex="-1" href="https://pic.couqiao.net/albums"><i class="fas fa-images text-sm mr-1"></i> 相册</a>
+                                                <a class="block px-4 py-2 active:bg-gray-100 text-sm text-gray-700 truncate hover:bg-sky-500 hover:text-white" role="menuitem" tabindex="-1" href="https://pic.couqiao.net/users"><i class="fas fa-users text-sm mr-1"></i> 用户</a>
+    </div>
+</div>
+                
+                                    <a href="https://pic.couqiao.net/login"><i class="fas fa-sign-in-alt text-sm mr-1"></i> 登录</a>
+                                                                    <div class="relative" x-data="{ open: false }" @click.outside="open = false" @close.stop="open = false" x-cloak="">
+    <div @click="open = ! open">
+        <a href="javascript:void(0)"><i class="fas fa-caret-down text-sm mr-1"></i> 更多</a>
+    </div>
+
+    <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="transform opacity-0 translate-y-9" x-transition:enter-end="transform opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 translate-y-0" x-transition:leave-end="transform opacity-0 translate-y-9" class="absolute z-[9] origin-top-right right-0 mt-2 w-48 rounded-md shadow-[10px_0px_50px_-15px_rgba(0,0,0,0.25)] py-1 bg-white " role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" style="display: none">
+        <a class="block px-4 py-2 active:bg-gray-100 text-sm text-gray-700 truncate hover:bg-sky-500 hover:text-white" role="menuitem" tabindex="-1" href="https://pic.couqiao.net/page/api-docs.html" target="_self"><i class="fas fa-file-code text-sm mr-1"></i> 接口文档</a>
+                                                    <a class="block px-4 py-2 active:bg-gray-100 text-sm text-gray-700 truncate hover:bg-sky-500 hover:text-white" role="menuitem" tabindex="-1" href="https://pic.couqiao.net/page/contact.html" target="_self"><i class="fas fa-comment text-sm mr-1"></i> 联系我们</a>
+    </div>
+</div>
+                            </div>
+        </div>
+    </div>
+</header>
+
+                <div class="absolute inset-0 z-0 bg-fixed bg-cover bg-center animate-slide rightness-50 bg-gradient-to-t from-sky-500"></div>
+                <div class="absolute inset-0 flex justify-center items-center h-full">
+            <div class="relative">
+                <h1 class="bg-clip-text text-white max-w-3xl mx-auto text-5xl font-bold text-center md:text-6xl lg:text-7xl">PICHUB<br><span class="text-white text-xl md:text-1xl lg:text-3xl">Your photo album on the cloud.</span></h1>
+                <div class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
+                    <a class="group relative inline-flex border-2 md:border-gray-300 focus:outline-none w-full sm:w-auto rounded-md transition-all text-white md:text-gray-300 hover:border-white hover:text-white" href="https://pic.couqiao.net/upload">
+                        <span class="w-full inline-flex items-center justify-center self-stretch px-10 py-3 text-md text-center font-bold uppercase bg-transparent">
+                            上传
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="absolute bottom-1 left-0 right-0 w-full text-center bg-transparent">
+            <p class="text-sm text-white">
+            Copyright © 2018 - present Lsky Pro. All rights reserved. &nbsp;<a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer"></a>
+        </p>
+    </footer>
+    </div>
+        </div>
+    </body>
+        <!-- Scripts -->
+    <script src="static/js/app.js"></script>
+            </html>
