@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="./ceshi.js"></script> -->
+  <style>
+    /* 在body中添加图片为背景，要求可以自适应响应设备窗口，等比例撑起整个屏幕，并居中显示。 */
+
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://img2.baidu.com/it/u=238972464,472431385&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=844);
+      background-size: cover;
+      background-position: center;
+
+      background-repeat: no-repeat;
+
+    }
+
+    .container {
+      /* 磨砂玻璃样式 */
+
+      background-color: rgba(249, 246, 246, 0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      padding: 50px;
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      max-width: 500px;
+
+      box-sizing: border-box;
+
+      text-align: center;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 18px;
+
+      line-height: 1.5;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    } */
+
+    .form1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .form1 label {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .form1 input[type="text"],
+    .form1 input[type="email"],
+    .form1 input[type="password"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      width: 300px;
+      font-size: 16px;
+    }
+
+    .form1 button[type="submit"] {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form1 button[type="submit"]:hover {
+      box-shadow: 0 0 10px rgba(12, 12, 12, 0.5);
+      transition: box-shadow 0.3s ease-in-out;
+      background-color: #9b0404fb;
+    }
+
+    .button1 {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button1:hover {
+      box-shadow: 0 0 10px rgba(12, 12, 12, 0.5);
+      transition: box-shadow 0.3s ease-in-out;
+      background-color: #9b0404fb;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="color: #46f1e9;text-align: center;font-family: 'Times New Roman', Times, serif;">何思豆的专属空间</h1>
+    <form class="form1" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">邮箱:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" onclick="validate()">注册</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="button1" onclick="dengru()">登录</button>
+      </div>
+      <br>
+    </form>
+    <br>
+
+
+    <div id="result">显示表单数据</div><br>
+    <div id="result2">显示本地缓存数据</div><button onclick="qingchu()">清除本地缓存</button>
+
+    <script>
+      function dengru() {
+        // 获取用户名和密码输入值
+        const usernameInput = document.getElementById("name");
+        const passwordInput = document.getElementById("password");
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        // 检查本地存储中是否有用户名和密码记录
+        const storedUsername = localStorage.getItem("name");
+        const storedPassword = localStorage.getItem("password");
+
+        if (!storedUsername || !storedPassword) {
+          alert("请先注册");
+        } else if (username === storedUsername && password === storedPassword) {
+          // 成功登录后重定向到指定页面
+          window.location.href = "fdj.html";
+        } else {
+          alert("用户名或密码错误");
+        }
+      }
+
+
+
+      // 清除缓存后，刷新页面
+      function qingchu() {
+        localStorage.clear();
+        location.reload();
+      }
+      function validate() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        //实现创建一个div来显示表单提交后的数据，数据保存在本地网页缓存中，刷新页面后依然存在
+        var result = document.getElementById("result");
+        result.innerHTML = "Name: " + name + "<br>Email: " + email + "<br>Password: " + password;
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+        return false;
+
+      }
+
+      //显示本地缓存数据,如果本地缓存中没有数据，则隐藏div
+      if (localStorage.getItem("name") == null) {
+        document.getElementById("result2").style.display = "none";
+      } else {
+        var result2 = document.getElementById("result2");
+        result2.innerHTML = "Name: " + localStorage.getItem("name") + "<br>Email: " + localStorage.getItem("email") + "<br>Password: " + localStorage.getItem("password");
+        document.getElementById("result2").style.display = "block";
+      }
+
+      // function validateForm() {
+      //   var name = document.forms["form1"]["name"].value;
+      //   var email = document.forms["form1"]["email"].value;
+      //   var password = document.forms["form1"]["password"].value;
+      //   if (name == "") {
+      //     alert("Name must be filled out");
+      //     return false;
+      //   }
+      //   if (email == "") {
+      //     alert("Email must be filled out");
+      //     return false;
+      //   }
+      //   if (password == "") {
+      //     alert("Password must be filled out");
+      //     return false;
+      //   }
+      //   if (password.length < 8) {
+      //     alert("Password must be at least 8 characters long");
+      //     return false;
+      //   }
+      //   return true;
+      // }
+    </script>
+  </div>
+
+</body>
+
+</html>
