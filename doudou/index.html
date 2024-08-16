@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>耀雨星辰</title>
+  <meta name="author" content="耀雨星辰">
+  <meta name="copyright" content="耀雨星辰">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="众人皆醒我独醉">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <!-- <link rel="preconnect" href="https://cdn.jsdelivr.net/">
+  <link rel="preconnect" href="//hm.baidu.com">
+  <link rel="preconnect" href="https://busuanzi.ibruce.info/"> -->
+  <meta>
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/all.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="static/css/fancybox.css" media="print" onload="this.media='all'">
+  <!-- <script>var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?54461ffa711a911259a0dc6e6963e596";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script> -->
+  <script>const GLOBAL_CONFIG = {
+      root: '/',
+      algolia: undefined,
+      localSearch: { "path": "/search.xml", "preload": false, "languages": { "hits_empty": "找不到您查询的内容：${query}" } },
+      translate: undefined,
+      noticeOutdate: undefined,
+      highlight: { "plugin": "highlighjs", "highlightCopy": true, "highlightLang": true, "highlightHeightLimit": false },
+      copy: {
+        success: '复制成功',
+        error: '复制错误',
+        noSupport: '浏览器不支持'
+      },
+      relativeDate: {
+        homepage: false,
+        post: false
+      },
+      runtime: '',
+      date_suffix: {
+        just: '刚刚',
+        min: '分钟前',
+        hour: '小时前',
+        day: '天前',
+        month: '个月前'
+      },
+      copyright: undefined,
+      lightbox: 'fancybox',
+      Snackbar: undefined,
+      source: {
+        justifiedGallery: {
+          js: 'https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+          css: 'https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+        }
+      },
+      isPhotoFigcaption: false,
+      islazyload: false,
+      isAnchor: false,
+      percent: {
+        toc: true,
+        rightside: false,
+      }
+    };</script>
+  <script id="config-diff">var GLOBAL_CONFIG_SITE = {
+      title: '耀雨星辰',
+      isPost: false,
+      isHome: true,
+      isHighlightShrink: false,
+      isToc: false,
+      postUpdate: '2024-7-30 13:33:05'
+    }</script><noscript>
+    <style type="text/css">
+      #nav {
+        opacity: 1
+      }
+
+      .justified-gallery img {
+        opacity: 1
+      }
+
+      #recent-posts time,
+      #post-meta time {
+        display: inline !important
+      }
+    </style>
+  </noscript>
+  <script>(win => {
+                               win.saveToLocal = {
+                                 set: function setWithExpiry(key, value, ttl) {
+                                   if (ttl === 0) return
+                                   const now = new Date()
+                                   const expiryDay = ttl * 86400000
+                                   const item = {
+                                     value: value,
+                                     expiry: now.getTime() + expiryDay,
+                                   }
+                                   localStorage.setItem(key, JSON.stringify(item))
+                                 },
+
+                                 get: function getWithExpiry(key) {
+                                   const itemStr = localStorage.getItem(key)
+
+                                   if (!itemStr) {
+                                     return undefined
+                                   }
+                                   const item = JSON.parse(itemStr)
+                                   const now = new Date()
+
+                                   if (now.getTime() > item.expiry) {
+                                     localStorage.removeItem(key)
+                                     return undefined
+                                   }
+                                   return item.value
+                                 }
+                               }
+
+                               win.getScript = url => new Promise((resolve, reject) => {
+                                 const script = document.createElement('script')
+                                 script.src = url
+                                 script.async = true
+                                 script.onerror = reject
+                                 script.onload = script.onreadystatechange = function () {
+                                   const loadState = this.readyState
+                                   if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                                   script.onload = script.onreadystatechange = null
+                                   resolve()
+                                 }
+                                 document.head.appendChild(script)
+                               })
+
+                               win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+                                 const link = document.createElement('link')
+                                 link.rel = 'stylesheet'
+                                 link.href = url
+                                 if (id) link.id = id
+                                 link.onerror = reject
+                                 link.onload = link.onreadystatechange = function () {
+                                   const loadState = this.readyState
+                                   if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                                   link.onload = link.onreadystatechange = null
+                                   resolve()
+                                 }
+                                 document.head.appendChild(link)
+                               })
+
+                               win.activateDarkMode = function () {
+                                 document.documentElement.setAttribute('data-theme', 'dark')
+                                 if (document.querySelector('meta[name="theme-color"]') !== null) {
+                                   document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+                                 }
+                               }
+                               win.activateLightMode = function () {
+                                 document.documentElement.setAttribute('data-theme', 'light')
+                                 if (document.querySelector('meta[name="theme-color"]') !== null) {
+                                   document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+                                 }
+                               }
+                               const t = saveToLocal.get('theme')
+
+                               if (t === 'dark') activateDarkMode()
+                               else if (t === 'light') activateLightMode()
+
+                               const asideStatus = saveToLocal.get('aside-status')
+                               if (asideStatus !== undefined) {
+                                 if (asideStatus === 'hide') {
+                                   document.documentElement.classList.add('hide-aside')
+                                 } else {
+                                   document.documentElement.classList.remove('hide-aside')
+                                 }
+                               }
+
+                               const detectApple = () => {
+                                 if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+                                   document.documentElement.classList.add('apple')
+                                 }
+                               }
+                               detectApple()
+                             })(window)</script>
+  <meta name="generator" content="Hexo 6.0.0">
+</head>
+
+<body>
+  <div id="sidebar">
+    <div id="menu-mask"></div>
+    <div id="sidebar-menus">
+      <div class="avatar-img is-center"><img src="static/picture/gravatar.webp"
+          onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div>
+      <div class="sidebar-site-data site-data is-center"><a href="archives.html">
+          <div class="headline">文章</div>
+          <div class="length-num">93</div>
+        </a><a href="tags.html">
+          <div class="headline">标签</div>
+          <div class="length-num">6</div>
+        </a><a href="categories.html">
+          <div class="headline">分类</div>
+          <div class="length-num">5</div>
+        </a></div>
+      <hr>
+      <div class="menus_items">
+        <div class="menus_item"><a class="site-page" href=""><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div>
+        <div class="menus_item"><a class="site-page" href="archives.html"><i class="fa-fw fas fa-archive"></i><span>
+              归档</span></a></div>
+        <div class="menus_item"><a class="site-page" href="donate.html"><i
+              class="fa-fw fa-fw fa fa-heartbeat"></i><span> 捐赠</span></a></div>
+        <div class="menus_item"><a class="site-page" href="links.html"><i class="fa-fw fas fa-link"></i><span>
+              友链</span></a></div>
+        <div class="menus_item"><a class="site-page" href="guest.html"><i
+              class="fa-fw fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div>
+        <div class="menus_item"><a class="site-page" href="about.html"><i class="fa-fw fas fa-heart"></i><span>
+              关于</span></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="body-wrap">
+    <header class="full_page" id="page-header" style="background-image: url('static/image/index.webp')">
+      <nav id="nav"><span id="blog-info"><a href="" title="耀雨星辰"><span class="site-name">耀雨星辰</span></a>
+        </span>
+        <div id="menus">
+          <div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i
+                class="fas fa-search fa-fw"></i><span> 搜索</span></a></div>
+          <div class="menus_items">
+            <div class="menus_item"><a class="site-page" href=""><i class="fa-fw fas fa-home"></i><span> 首页</span></a>
+            </div>
+            <div class="menus_item"><a class="site-page" href="archives.html"><i class="fa-fw fas fa-archive"></i><span>
+                  归档</span></a></div>
+            <div class="menus_item"><a class="site-page" href="donate.html"><i
+                  class="fa-fw fa-fw fa fa-heartbeat"></i><span> 捐赠</span></a></div>
+            <div class="menus_item"><a class="site-page" href="links.html"><i class="fa-fw fas fa-link"></i><span>
+                  友链</span></a></div>
+            <div class="menus_item"><a class="site-page" href="guest.html"><i
+                  class="fa-fw fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div>
+            <div class="menus_item"><a class="site-page" href="about.html"><i class="fa-fw fas fa-heart"></i><span>
+                  关于</span></a></div>
+          </div>
+          <div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div id="site-info">
+        <h1 id="site-title">耀雨星辰</h1>
+        <div id="site-subtitle"><span id="subtitle"></span></div>
+      </div>
+      <div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div>
+    </header>
+    <main class="layout" id="content-inner">
+      <div class="recent-posts" id="recent-posts">
+        <div class="recent-post-item">
+          <div class="post_cover left"><a href="20231105.html" title="余早合集（篇五）"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/yuzao.webp" onerror="this.onerror=null;this.src='/img/404.jpg'"
+                alt="余早合集（篇五）"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="20231105.html" title="余早合集（篇五）">余早合集（篇五）</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2023-11-04T16:44:52.000Z"
+                  title="发表于 2023-11-05 00:44:52">2023-11-05</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="20231105.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">翻看上次更新的日期，竟已是一年半之前，期间已发生太多事情，其中值得一提的就是身份又发生转变。
+              2017年初建博客，在“关于”页面对自己的介绍是“师范生”，2020年改为“教育硕士”，到如今变成“教师”，从职前到职初，已然过去了六年。
+              入职时间是从八月份开始计算，但八月底九月初才正式开始工作。教学生涯的第一年，带一个班的班主任并且只教这一个班的数学，看起来工作量好像不是很大，但实际上每天的工作也很繁忙。早上六点半起床，七点二十之前到班级巡视，八点前到食堂吃饭，然后改作业、上课，参加区里、学校的各项会议、培训等等，一天下来几乎很少有休息的时间，中午还要看午休，晚上要等学生放学检查完卫生，基本上都是六点后离开学校，单看这一天的作息时间就很窒息了。
+              实际上跟学生相处不是很困难，毕竟十来岁的孩子相对来说比较单纯，主要是跟家长沟通比较耗费心神，短短两个月已然让我体验到人间百态。不谈背后如何，大部分家长也能维持表面的和谐，但是但凡有一个连表面和谐都无法维持的，就够受的了。
+              上一篇文章就是推介十年之约论坛的，但前不久我关闭了论坛，将数据和大佬论坛（dalao.net）合并。当初建立论坛是想给博主建设一 ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover right"><a href="foreverblog-bbs.html" title="十年之约论坛与5周年活动"><img class="post-bg"
+                src="https://file.couqiao.net/pic/2022/04/30/626d2b266cba5.webp"
+                onerror="this.onerror=null;this.src='/img/404.jpg'" alt="十年之约论坛与5周年活动"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="foreverblog-bbs.html"
+              title="十年之约论坛与5周年活动">十年之约论坛与5周年活动</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2022-04-30T12:27:56.000Z"
+                  title="发表于 2022-04-30 20:27:56">2022-04-30</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="foreverblog-bbs.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">因为疫情原因，四月也是格外得闲，闲得无聊便总想找点事情做做，于是便有了这样一个论坛：十年之约 (xyears.cn)。
+              在互联网概念已经进入web3.0的时代，论坛似乎有些跟不上潮流，我们还需要一个论坛吗？我不必费尽心力为这个问题找出一个答案，毕竟博客这样一个早就应该消失的概念仍然散发着微弱的光芒，还有一众独博客用户在坚守着自己喜欢的创作与记录方式。论坛也一样，更何况我们这个论坛的对象群体如此清晰，就是我们这群“抱残守缺”的独立博客用户。
+              我初次接触论坛要追溯到初中，那时流行的论坛程序还是柯林和phpbb，尽管我才刚接触不久，但那时论坛的发展已呈现出颓势，我所熟知的论坛坚持到今天的也仅剩虎绿林。目前比较活跃的论坛屈指可数，为人熟知的有吾爱破解、V2ex、hostloc等，我相信很多博主也都是这些论坛的用户，但好像少有针对独立博客用户推出的论坛。
+              在博客建立与维护的过程中我们可能有各种各样的问题、经验需要交流，有很多感受、收获想要分享，而其他独立博客主正是我们交流与分享的最好对象。今年是十年之约项目成立5周年，十年之约已然聚集了一大批独立博客用户，我们希望在此基础上能建设好这个中文独立博
+              ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover left"><a href="20220327.html" title="寒暖无常的三月"><img class="post-bg"
+                src="https://file.couqiao.net/pic/2022/03/27/62406e17c9b2b.webp"
+                onerror="this.onerror=null;this.src='/img/404.jpg'" alt="寒暖无常的三月"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="20220327.html" title="寒暖无常的三月">寒暖无常的三月</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2022-03-27T13:52:04.000Z"
+                  title="发表于 2022-03-27 21:52:04">2022-03-27</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="20220327.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">
+              #备案碎碎念网站因为备案而暂时关闭了一阵子，好在我的博客除了自己也没什么人关心，所以就算关那么几天也不会损失什么用户。不过等待的日子也让人焦急，现在江苏省icp备案的审核时间太长了，我2017年初次备案时，腾讯云从将资料提交管局到管局审核完成仅需7天，而在2022年的这次备案居然花了近20天的时间，不知为何审核效率反而降低，是如今建立个人网站的用户比之17年更多了？
+              #静态博客已经用了一段时间的hexo博客，越来越觉得静态博客深得我心，诸多详细的教程与辅助工具也让如我这般不是太懂代码的小白也能顺利使用，而且与动态博客相比，静态博客维护的工作量更小，因此更能将精力集中于写作，或许今后会一直用下去。
+              #博客托管之前将博客托管在国外的netlify，其实体验还不错，但总归是不如使用国内的云服务访问快，因此我便将couqiao.net提交备案，目前我的博客使用的腾讯云开发cloudbase的静态网站托管服务，按量付费，读者越少越省钱，看来要想办法减少网站的访客。
+              #寒暖无常三月的天气寒暖无常，走在路上可以看到人群中既有短袖短裤又有羽绒棉裤，每天都要先看一下天气预报才能决定穿什么。刚把冬衣收起来 ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover right"><a href="yidahost.html" title="即将倒闭的“益达云”"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/webimg/2022/02/18/17-01-59-b9090915be1478ca1287a2834c090e01-c0a157.png"
+                onerror="this.onerror=null;this.src='/img/404.jpg'" alt="即将倒闭的“益达云”"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="yidahost.html" title="即将倒闭的“益达云”">即将倒闭的“益达云”</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2022-02-17T15:17:12.000Z"
+                  title="发表于 2022-02-17 23:17:12">2022-02-17</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="吟咏代码为诗.html">吟咏代码为诗</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="yidahost.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">
+              倒闭通知益达云创立于2017年，是全球落后的云计算小作坊，腾讯云下游服务非官方代理，为数位用户提供过不安全不稳定的服务，深耕行业多年，最终未形成任何成熟的产品解决方案，现由于预料之外的因素，将于2022年9月提前倒闭，特此通知！
+              益达云只听说阿里云、腾讯云，哪里冒出来的益达云？所谓益达云，不过开玩笑的说法，既无注册公司运营，也无官网地址，只是将几台港区的闲置服务器给博友托管博客而已。腾讯云香港地区的服务器并不便宜，为什么我还闲置几台，这要感谢腾讯云云+校园活动，为我提供了几台低成本的服务器。
+              腾讯云云+校园这是腾讯云早期针对学生推出的优惠活动，其发展历程大致为：
+              v1版本，该版本的活动规则是从2015年10月开始，2017年9月下线，采用的是每月发放优惠券续费的方式，一开始是系统自动发放优惠券，后来改为手动领取。优惠券分为两种，一种为满65-64，另一种为满167-155，按理来说两张券是只能领取其中一张，但是后来由于活动规则频繁改变且非常混乱，反正最终我的账户两张券都能领到，而且续费券为满减券，不限制续费机型、地域。
+              v2版本， 该版本的活动规则是从2017年9月到2020年10月， ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover left"><a href="happynewyear2022.html" title="新的一年"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/xindeyinian.jpg"
+                onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新的一年"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="happynewyear2022.html" title="新的一年">新的一年</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2022-02-10T04:46:17.000Z"
+                  title="发表于 2022-02-10 12:46:17">2022-02-10</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="happynewyear2022.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">
+              虎年对我而言有些特殊的意义，我正好属虎，所以今年恰好是本命年。我本以为这是个吉利的年头，后来才知道民间有着本命年易犯太岁的说法，智慧的古代人民想到了穿红衣袜来驱邪避凶，这一习俗帮助一代又一代人顺利度过一个又一个本命年，可谓效果显著，自然我也是穿了一身红。
+              新年伊始，按惯例应当作一个总结，这一工作放在一个月前的元旦比较好，因为公历年的天数是相对比较稳定的，周期性更加明显，但由于本人实在是懒，就想拖到农历年再说吧，于是便拖到了今天还没动笔，想着再拖下去农历年都快过去了，那便就在今天吧（公历年第二个月的第10天，农历年第10天）。
+              细数博客去年的更新量，总共5篇，其中有一篇还是直接搬的十年之约的文案，可以用屈指可数来形容。如果再算上2019年的后半年，过去的一年半总共也就写了这5篇，这产量甚至比不上高三的作文量，当时一个月至少还能写个四篇800字以上的作文。
+              虽然我内容写得少，但是我最近折腾得勤快。从2017年建立博客以来就一直使用typecho，到今年已经是第五个年头，但就在前不久我更换为静态博客系统hexo，采用twikoo评论系统，并将整站的文章+评论都迁移了过来，唯一遗憾的地方就是”
+              ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover right"><a href="414.html" title="周末闲谈（六）"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/weekend.webp" onerror="this.onerror=null;this.src='/img/404.jpg'"
+                alt="周末闲谈（六）"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="414.html" title="周末闲谈（六）">周末闲谈（六）</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2021-10-01T07:03:00.000Z"
+                  title="发表于 2021-10-01 15:03:00">2021-10-01</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="414.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">研二比研一少了好多课，最近的空闲时间也多了起来，所以就推动十年之约项目增加了一些新的功能，首先就是虫洞
+              ，通过虫洞（foreverblog.cn/go.html）可以随机进入到十年之约成员博客，不少朋友对这个功能的反馈还不错，但有一些建议包括像“开往”一样强制所有十年之约成员在自己的博客加上虫洞的链接，这不符合十年之约的宗旨，我们欢迎并且非常希望大家能加上虫洞的链接，但是不会强制。
+              另外一个就是最近又将十年之约的rss聚合订阅功能集成到了十年之约官网上，在（foreverblog.cn/feeds.html）中可以看到所有成员最新更新的文章。以前也有这个功能，但是使用的是wordpress插件，为了这个聚合订阅还需要建立一个新的wordpress站点，不仅浪费资源，数据维护也很麻烦，新增成员的订阅地址需要手动加入到这个插件中，操作十分不便。现在申请审核、异常标记、信息更改、订阅地址管理等等都在一个系统中，处理起来就方便很多，数据也都是同步的。此外这个rss聚合订阅还提供了api接口，后期考虑开放给开发者使用。
+              回想当初十年之约一开始使用的Typecho系统+麦客表单 ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover left"><a href="411.html" title="周末闲谈（五）"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/weekend.webp" onerror="this.onerror=null;this.src='/img/404.jpg'"
+                alt="周末闲谈（五）"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="411.html" title="周末闲谈（五）">周末闲谈（五）</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2021-09-01T04:12:00.000Z"
+                  title="发表于 2021-09-01 12:12:00">2021-09-01</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="411.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">《周末闲谈》是本博客除《余早合集》外的另一个“专栏”系列，上次写这个系列要追溯到2019年的8月份，距今已有两年。
+              当初开辟《周末闲谈》专栏，就是为了省得给文章想标题。我们写作文都知道取标题有多麻烦，既怕文不对题，又担心题不达意，现在只需要在“周末闲谈”后加上序号以示区别，而且文章内容可以随意发挥，不必担心跑题，省心省力岂不快哉。这个暑假我因为兼职留在了扬州，也算是有了一段难忘的抗疫经历，如果详细记录下来，也许还能再开辟一个《扬州日记》专栏，这样写下来也许终于能够实现著作等身的愿望，不过我这么懒，应该是写不成了。扬州本来就是一个生活节奏很慢的城市，这边有“早上皮包水，晚上水包皮”的传统，所以早茶文化和洗浴文化很流行，过去有种说法，全国一半的修脚技师都出自扬州，由此可见扬州人多会享受生活。这次疫情也将扬州的另外一大特色呈现给了全国人民，那就是“博彩业”，网友戏称其为“扬·拉斯维加斯·州”。扬州有着远高于全国平均比例的老年人口，喝喝早茶，泡泡澡，再打打牌，这就构成了这些老年人一天的生活主线。庞大的需求也孕育出了繁荣的市场，所以扬州棋牌室的数量和规模是比较可观的，就比如这次出名的宏远棋牌室，
+              ...</div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover right"><a href="397.html" title="穿梭虫洞-随机访问十年之约博客链接"><img class="post-bg"
+                src="https://file.couqiao.net/pic/2022/03/25/623d448101593.webp"
+                onerror="this.onerror=null;this.src='/img/404.jpg'" alt="穿梭虫洞-随机访问十年之约博客链接"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="397.html"
+              title="穿梭虫洞-随机访问十年之约博客链接">穿梭虫洞-随机访问十年之约博客链接</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2021-08-26T06:14:00.000Z"
+                  title="发表于 2021-08-26 14:14:00">2021-08-26</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="397.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">1.虫洞是什么？
+              我们的博客散布在浩瀚的互联网宇宙中，虽然同处十年之约这个星系当中，但是由于十年之约官网中成员列表的脑残设定，成员之间的博客互访非常麻烦。虫洞是连结两个遥远时空的空间隧道，通过虫洞您可以非常方便地随机访问十年之约成员的博客。
+              2.如何开启虫洞？
+              访问网址：https://foreverblog.cn/go.html即可随机跳转到十年之约正式成员的博客
+              3.如何加入虫洞？
+              虫洞随机读取十年之约成员博客的地址，所以加入十年之约即可同步到虫洞目的地列表
+              4.如何支持虫洞？
+              将虫洞（https://foreverblog.cn/go.html）的链接加入到您博客的显眼位置，如：博客顶部、侧边栏、底部，您还可以推荐更多朋友加入十年之约（http//join.foreverblog.cn）
+              虫洞即将开启，目的地–未知
+
+            </div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover left"><a href="388.html" title="余早合集（篇四）"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/yuzao.webp" onerror="this.onerror=null;this.src='/img/404.jpg'"
+                alt="余早合集（篇四）"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="388.html" title="余早合集（篇四）">余早合集（篇四）</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2021-08-22T07:39:10.000Z"
+                  title="发表于 2021-08-22 15:39:10">2021-08-22</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="388.html#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span
+                  class="article-meta-label"> 条评论</span></span></div>
+            <div class="content">
+              当我开始写“余早”系列时，就意味着我已经好久不更新了，但本篇“余早”与上篇“余早”之间隔着一篇水文，这确实也有些说不过去。我曾构想过很多更新系列，没想到最终还是“余早”的更新最为稳定。
+              有不少朋友问我“余早”何意，在此顺带再提一下，鲁迅先生有《且介亭杂记》，其中“且介”取“租界”二字，暗喻“禾田”已失，我的“余早”取“除草”二字，表示“草尽刀藏”，表达的是我对博客不再长草的美好祝愿。谈到近况，实际上并不是太好，身处扬州城高风险地区，家中又有事牵挂，算得上内忧外患，惟愿事情都会快速朝着好的方向发展。在不知不觉中度过了研究生一年级，每天经历着同样的学习与生活，文献书籍的阅读也越来越多，本应更加充实，却越来越感到自己的浅薄与无知。过去觉得自己懂得很多，不管什么事都敢发表自己的评论与想法，总愿意与人争辩并尝试表达，现在却少了这样做的底气，没了争锋相对的锐气，也许是怂了，也许是佛了，或许兼而有之。最近博客也少有人来，在外看博客我也很少留言了，其实访客少点也好，或许这样我才更方便写一些我想写的东西。
+            </div>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <div class="post_cover right"><a href="collection-of-yu-zao-part-3.html" title="余早合集（篇三）"><img class="post-bg"
+                src="https://file.couqiao.net/webimg/yuzao.webp" onerror="this.onerror=null;this.src='/img/404.jpg'"
+                alt="余早合集（篇三）"></a></div>
+          <div class="recent-post-info"><a class="article-title" href="collection-of-yu-zao-part-3.html"
+              title="余早合集（篇三）">余早合集（篇三）</a>
+            <div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span
+                  class="article-meta-label">发表于</span><time datetime="2021-01-27T02:05:00.000Z"
+                  title="发表于 2021-01-27 10:05:00">2021-01-27</time></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories"
+                  href="不巧，我在等你.html">不巧，我在等你</a></span><span class="article-meta"><span
+                  class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count"
+                  href="collection-of-yu-zao-part-3.html#post-comment"><i
+                    class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span>
+            </div>
+            <div class="content">
+              好久没在博客写东西，可以感觉到自己的胡诌能力有退步，上个月考试的两篇命题作文写的都很费劲。这半年我时常也想到是不是该更新了，但总是因为各种理由搁下，直至拖到今天。
+
+              按惯例每年伊始都应有篇博文来总结上一年，乘着一月还没过去，就顺便在此作一小结。这一年因为疫情的原因，有太多的事只能将就。在家待了近三个月，直至四月份我们成为全国第一批开学的大学生，终于能够返回校园。很多同学选择暂不返校，但我还是要回去，在学校里我一个人住在六人寝室，一个人起床，一个人吃饭，一个人去图书馆，晚上一个人在宿舍开着灯，好像如此孤独但我却感受不到孤独，内心只有惴惴不安，一心盘算着我考上研究生的概率，终于在五月底收到了拟录取通知，那憋了好久的气终于松了。六月份我又去了苏州，一家校友开的辅导机构，提供住宿，有一个舍友，一起工作了两个半月。在苏州的这些日子，逛了很多地方，寒山寺、枫桥、金鸡湖、东方之门、苏州博物馆、山塘街、平江路……这有很多次都是说走就走的旅行，临时起意走向地铁，出发前也无目的，路上再想到哪里玩，那种感觉也是挺有趣的。七月份回校办毕业手续，因为梅雨季节，被子什么的都发霉了，宿舍的大部分东西最后都扔了。很
+              ...</div>
+          </div>
+        </div>
+        <nav id="pagination">
+          <div class="pagination"><span class="page-number current">1</span><a class="page-number"
+              href="2.html#content-inner">2</a><span class="space">…</span><a class="page-number"
+              href="10.html#content-inner">10</a><a class="extend next" rel="next" href="2.html#content-inner"><i
+                class="fas fa-chevron-right fa-fw"></i></a></div>
+        </nav>
+      </div>
+      <div class="aside-content" id="aside-content">
+        <div class="card-widget card-info">
+          <div class="is-center">
+            <div class="avatar-img"><img src="static/picture/gravatar.webp"
+                onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div>
+            <div class="author-info__name">耀雨星辰</div>
+            <div class="author-info__description">众人皆醒我独醉</div>
+          </div>
+          <div class="card-info-data site-data is-center"><a href="archives.html">
+              <div class="headline">文章</div>
+              <div class="length-num">93</div>
+            </a><a href="tags.html">
+              <div class="headline">标签</div>
+              <div class="length-num">6</div>
+            </a><a href="categories.html">
+              <div class="headline">分类</div>
+              <div class="length-num">5</div>
+            </a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://foreverblog.cn"><i
+              class="fas fa-blog"></i><span>十年之约</span></a>
+        </div>
+        <div class="sticky_layout">
+          <div class="card-widget card-recent-post">
+            <div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div>
+            <div class="aside-list">
+              <div class="aside-list-item"><a class="thumbnail" href="20231105.html" title="余早合集（篇五）"><img
+                    src="https://file.couqiao.net/webimg/yuzao.webp" onerror="this.onerror=null;this.src='/img/404.jpg'"
+                    alt="余早合集（篇五）"></a>
+                <div class="content"><a class="title" href="20231105.html" title="余早合集（篇五）">余早合集（篇五）</a><time
+                    datetime="2023-11-04T16:44:52.000Z" title="发表于 2023-11-05 00:44:52">2023-11-05</time></div>
+              </div>
+              <div class="aside-list-item"><a class="thumbnail" href="foreverblog-bbs.html" title="十年之约论坛与5周年活动"><img
+                    src="https://file.couqiao.net/pic/2022/04/30/626d2b266cba5.webp"
+                    onerror="this.onerror=null;this.src='/img/404.jpg'" alt="十年之约论坛与5周年活动"></a>
+                <div class="content"><a class="title" href="foreverblog-bbs.html"
+                    title="十年之约论坛与5周年活动">十年之约论坛与5周年活动</a><time datetime="2022-04-30T12:27:56.000Z"
+                    title="发表于 2022-04-30 20:27:56">2022-04-30</time></div>
+              </div>
+              <div class="aside-list-item"><a class="thumbnail" href="20220327.html" title="寒暖无常的三月"><img
+                    src="https://file.couqiao.net/pic/2022/03/27/62406e17c9b2b.webp"
+                    onerror="this.onerror=null;this.src='/img/404.jpg'" alt="寒暖无常的三月"></a>
+                <div class="content"><a class="title" href="20220327.html" title="寒暖无常的三月">寒暖无常的三月</a><time
+                    datetime="2022-03-27T13:52:04.000Z" title="发表于 2022-03-27 21:52:04">2022-03-27</time></div>
+              </div>
+              <div class="aside-list-item"><a class="thumbnail" href="yidahost.html" title="即将倒闭的“益达云”"><img
+                    src="https://file.couqiao.net/webimg/webimg/2022/02/18/17-01-59-b9090915be1478ca1287a2834c090e01-c0a157.png"
+                    onerror="this.onerror=null;this.src='/img/404.jpg'" alt="即将倒闭的“益达云”"></a>
+                <div class="content"><a class="title" href="yidahost.html" title="即将倒闭的“益达云”">即将倒闭的“益达云”</a><time
+                    datetime="2022-02-17T15:17:12.000Z" title="发表于 2022-02-17 23:17:12">2022-02-17</time></div>
+              </div>
+              <div class="aside-list-item"><a class="thumbnail" href="happynewyear2022.html" title="新的一年"><img
+                    src="https://file.couqiao.net/webimg/xindeyinian.jpg"
+                    onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新的一年"></a>
+                <div class="content"><a class="title" href="happynewyear2022.html" title="新的一年">新的一年</a><time
+                    datetime="2022-02-10T04:46:17.000Z" title="发表于 2022-02-10 12:46:17">2022-02-10</time></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-widget card-categories">
+            <div class="item-headline">
+              <i class="fas fa-folder-open"></i>
+              <span>分类</span>
+
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+              <li class="card-category-list-item "><a class="card-category-list-link" href="不巧，我在等你.html"><span
+                    class="card-category-list-name">不巧，我在等你</span><span class="card-category-list-count">49</span></a>
+              </li>
+              <li class="card-category-list-item "><a class="card-category-list-link" href="吟咏代码为诗.html"><span
+                    class="card-category-list-name">吟咏代码为诗</span><span class="card-category-list-count">13</span></a>
+              </li>
+              <li class="card-category-list-item "><a class="card-category-list-link" href="唯学高为人师.html"><span
+                    class="card-category-list-name">唯学高为人师</span><span class="card-category-list-count">7</span></a>
+              </li>
+              <li class="card-category-list-item "><a class="card-category-list-link" href="曾经风花雪月.html"><span
+                    class="card-category-list-name">曾经风花雪月</span><span class="card-category-list-count">13</span></a>
+              </li>
+              <li class="card-category-list-item "><a class="card-category-list-link" href="立身却在生平.html"><span
+                    class="card-category-list-name">立身却在生平</span><span class="card-category-list-count">11</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-widget card-archives">
+            <div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn"
+                href="archives.html" title="查看更多">
+                <i class="fas fa-angle-right"></i></a></div>
+            <ul class="card-archive-list">
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="11.html"><span
+                    class="card-archive-list-date">十一月 2023</span><span class="card-archive-list-count">1</span></a>
+              </li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="04.html"><span
+                    class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="03.html"><span
+                    class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">1</span></a></li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="02.html"><span
+                    class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">2</span></a></li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="101.html"><span
+                    class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">1</span></a></li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="09.html"><span
+                    class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="08.html"><span
+                    class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">2</span></a></li>
+              <li class="card-archive-list-item"><a class="card-archive-list-link" href="01.html"><span
+                    class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">1</span></a></li>
+            </ul>
+          </div>
+          <div class="card-widget card-webinfo">
+            <div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div>
+            <div class="webinfo">
+              <div class="webinfo-item">
+                <div class="item-name">文章数目 :</div>
+                <div class="item-count">93</div>
+              </div>
+              <div class="webinfo-item">
+                <div class="item-name">本站总字数 :</div>
+                <div class="item-count">52.8k</div>
+              </div>
+              <div class="webinfo-item">
+                <div class="item-name">本站访客数 :</div>
+                <div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div>
+              </div>
+              <div class="webinfo-item">
+                <div class="item-name">本站总访问量 :</div>
+                <div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div>
+              </div>
+              <div class="webinfo-item">
+                <div class="item-name">最后更新时间 :</div>
+                <div class="item-count" id="last-push-date" data-lastpushdate="2023-12-24T05:33:05.629Z"><i
+                    class="fa-solid fa-spinner fa-spin"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" style="background-image: url('static/image/footer.webp')">
+      <div id="footer-wrap">
+        <div class="copyright">&copy;2017 - 2023 By 雨落泪尽</div>
+        <div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener"
+            href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank"
+            rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div>
+        <div class="footer_custom_text"><a target="_blank" rel="noopener"
+            href="https://beian.miit.gov.cn/">苏ICP备17028566号</a>|<a target="_blank"
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011502011571"
+            style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+              src="https://file.couqiao.net/pic/2022/03/29/6242d597d325a.png" style="float:left;">苏公网安备
+            32011502011571号</a></div>
+      </div>
+    </footer>
+  </div>
+  <div id="rightside">
+    <div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i
+          class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i
+          class="fas fa-arrows-alt-h"></i></button></div>
+    <div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i
+          class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span
+          class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div>
+  </div>
+  <div>
+    <script src="static/js/utils.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/fancybox.umd.js"></script>
+    <div class="js-pjax">
+      <script>(() => {
+                               const getCommentUrl = () => {
+                                 const eleGroup = document.querySelectorAll('#recent-posts .article-title')
+                                 let urlArray = []
+                                 eleGroup.forEach(i => {
+                                   urlArray.push(i.getAttribute('href'))
+                                 })
+                                 return urlArray
+                               }
+
+                               const getCount = () => {
+                                 const runTwikoo = () => {
+                                   twikoo.getCommentsCount({
+                                     envId: 'https://twikoo.couqiao.net/',
+                                     region: '',
+                                     urls: getCommentUrl(),
+                                     includeReply: false
+                                   }).then(function (res) {
+                                     document.querySelectorAll('#recent-posts .twikoo-count').forEach((item, index) => {
+                                       item.innerText = res[index].count
+                                     })
+                                   }).catch(function (err) {
+                                     console.log(err)
+                                   })
+                                 }
+
+                                 if (typeof twikoo === 'object') {
+                                   runTwikoo()
+                                 } else {
+                                   getScript('https://cossh.couqiao.net/file/twikoo.all.min.js').then(runTwikoo)
+                                 }
+                               }
+
+                               window.pjax ? getCount() : window.addEventListener('load', getCount)
+
+                             })();</script>
+      <script>window.typedJSFn = {
+          init: (str) => {
+            window.typed = new Typed('#subtitle', Object.assign({
+              strings: str,
+              startDelay: 300,
+              typeSpeed: 150,
+              loop: true,
+              backSpeed: 50,
+            }, null))
+          },
+          run: (subtitleType) => {
+            if (true) {
+              if (typeof Typed === 'function') {
+                subtitleType()
+              } else {
+                getScript('https://cossh.couqiao.net/file/typed.min.js').then(subtitleType)
+              }
+            } else {
+              subtitleType()
+            }
+          }
+        }
+      </script>
+
+      <script>function subtitleType() {
+          if (true) {
+            // 今人不见古时月，今月曾经照古人
+            typedJSFn.init(["社会很单纯，复杂的是人"])
+          } else {
+            document.getElementById("subtitle").innerHTML = '今人不见古时月，今月曾经照古人'
+          }
+        }
+        typedJSFn.run(subtitleType)
+      </script>
+    </div>
+    <script async="" data-pjax="" src="static/js/busuanzi.pure.mini.js"></script>
+  </div>
+  <div id="local-search">
+    <div class="search-dialog">
+      <nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button
+          class="search-close-button"><i class="fas fa-times"></i></button></nav>
+      <div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span> 功能暂未开放，敬请期待！</span>
+      </div>
+      <div class="search-wrap">
+        <div id="local-search-input">
+          <div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div>
+        </div>
+        <hr>
+        <div id="local-search-results"></div>
+      </div>
+    </div>
+    <div id="search-mask"></div>
+    <script src="static/js/local-search.js"></script>
+  </div>
+</body>
+
+</html>
